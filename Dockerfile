@@ -29,12 +29,6 @@ COPY --from=gromacs/gromacs-docker:fftw-3.3.8 /usr/local/lib /usr/local/lib
 # Copy compiled dependencies
 
 
-# Add the GROMACS configurations
-
-#COPY --from=gromacs/gromacs-docker:gmx-2020.2-cuda-10.2-SSE2     /gromacs /gromacs
-#COPY --from=gromacs/gromacs-docker:gmx-2020.2-cuda-10.2-AVX_256  /gromacs /gromacs
-#COPY --from=gromacs/gromacs-docker:gmx-2020.2-cuda-10.2-AVX2_256 /gromacs /gromacs
-#COPY --from=gromacs/gromacs-docker:gmx-2020.2-cuda-10.2-AVX_512  /gromacs /gromacs
 
 # Add architecture-detection script
 COPY gmx-chooser /gromacs/bin/gmx
