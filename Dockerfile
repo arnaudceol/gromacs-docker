@@ -1,5 +1,5 @@
 ###############################################################################
-# Ubuntu 18.04, CUDA 10.2, OpenMPI, and GROMACS.
+# Ubuntu 18.04, CUDA 12.3, OpenMPI, and GROMACS.
 #
 # This container is built automatically on Docker Hub, but can be built
 # manually with:
@@ -9,7 +9,7 @@
 # sudo nvidia-docker run -it gromacs
 ###############################################################################
 
-FROM nvidia/cuda:10.2-runtime-ubuntu18.04
+FROM nvidia/cuda:12.3.2-runtime-ubuntu22.04
 
 # install required packages
 RUN apt-get update \
